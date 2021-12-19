@@ -1,9 +1,5 @@
-// function enableScroll() {
-//     window.onscroll = function() {};
-// }
-// window.onload = function() {
-//     if (!window.location.hash) {
-//         window.location = window.location + '#loaded';
-//         window.location.reload();
-//     }
-// }
+// const openMenu = document.querySelector(".open__menu");
+// const closeMenu = document.querySelector(".close__menu");
+
+// openMenu.addEventListener("click", show);
+// closeMenu.addEventListener("click", close);
