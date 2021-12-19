@@ -22,7 +22,11 @@
 
 body {
     background-color: var(--var-bg);
+    scroll-snap-type: y mandatory;
     // overflow: hidden;
+    section {
+        scroll-snap-align: start;
+    }
 }
 
 li {
@@ -56,6 +60,7 @@ a {
     font-size: var(--big-header);
     font-weight: bold;
     line-height: 1.2;
+    margin: 10% 0;
 }
 
 .medium__header {
@@ -75,6 +80,7 @@ a {
     line-height: 1.4;
     color: var(--var-dark-gray);
     font-weight: normal;
+    margin: 1.5% 0;
 }
 
 .small__p {
@@ -84,6 +90,7 @@ a {
     width: 350px;
     font-style: italic;
     font-weight: normal;
+    margin-top: 30px;
 }
 
 .video {
@@ -92,12 +99,16 @@ a {
     left: 0;
     z-index: -1;
     width: 100vw;
+    object-fit: cover;
+    height: 100vh;
+    // width: auto;
 }
 
 .auther__job {
     font-weight: bold;
     font-size: var(--small-txt);
     line-height: 1.4;
+    margin: 1% 0;
 }
 
 .buttons {
@@ -149,50 +160,22 @@ a {
     color: var(--var-blue);
     display: inline;
     position: relative;
-    // width: 110px;
-    padding-top: 5px;
-    padding-right: 30px;
-    // i {
-    //     transition: 0.6s;
-    // }
-    // &:hover {
-    //     i {
-    //         transform: translateX(20px);
-    //     }
-    // }
-    &::before {
-        content: "";
-        position: absolute;
-        right: 0%;
-        top: 50%;
-        height: 2px;
-        width: 20px;
-        background-color: var(--var-blue);
-        color: var(--var-blue);
-        display: inline-block;
-        transition: 0.5s;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        top: 34%;
-        right: 0%;
-        border: solid var(--var-blue);
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 4px;
-        transition: 0.5s;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
-    &:hover::before {
-        transform: translateX(10px);
-    }
-    &:hover::after {
-        transform: translateX(10px) rotate(-45deg) translateY(0);
-    }
+    margin-top: 1.5%;
+    display: flex;
+    align-items: center;
     a {
         padding-right: 40px;
+    }
+    .right__arrow {
+        width: 22px !important;
+        margin-top: 0 !important;
+        margin-left: 2%;
+        transition: 0.4s ease-in-out;
+    }
+    &:hover {
+        .right__arrow {
+            transform: translateX(12px);
+        }
     }
 }
 
@@ -217,6 +200,9 @@ a {
             background: transparent;
             .logo {
                 width: 100px;
+                img {
+                    width: 130px;
+                }
             }
             .nav__links {
                 ul {
@@ -282,10 +268,12 @@ a {
         height: 100vh;
         float: left;
         .content {
-            // background: url(./video/main.mp4) loop autoplay;
+            a {
+                margin-top: 1.5%;
+            }
             .author {
+                margin: 1% 0;
                 p {
-                    margin-top: 30px;
                     font-size: 16px;
                     font-weight: normal;
                 }
@@ -317,7 +305,7 @@ a {
             width: 100px;
         }
         p {
-            margin-top: 10px;
+            margin: 4.5% 0;
         }
     }
     #third.page {
@@ -473,10 +461,6 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .small__p {
-            margin: 30px auto;
-            font-style: normal;
-        }
         .compliance__boxes {
             display: flex;
             flex-direction: row;
@@ -517,21 +501,19 @@ a {
     box-shadow: none;
     display: flex;
     justify-content: center;
-    height: 200vh;
+    height: 130vh;
     position: relative;
-    margin-bottom: 90vh;
+    // margin-top: 0;
     .container {
         max-width: 80%;
         .content {
             display: flex;
             position: relative;
             .video__flow {
-                video {
-                    position: absolute;
-                    top: -35%;
-                    right: 0;
-                    width: 55vw;
-                }
+                position: absolute;
+                top: -35%;
+                right: 0;
+                width: 55vw;
             }
         }
         .explore__content {
@@ -576,5 +558,12 @@ footer {
             justify-content: space-between;
             padding: 50px 0;
         }
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    video {
+        height: 100%;
+        width: auto;
     }
 }
