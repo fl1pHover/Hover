@@ -1,0 +1,235 @@
+@import url("http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-std");
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Neue Haas Grotesk Text Std", sans-serif;
+  color: var(--var-dark);
+}
+
+:root {
+  --var-bg: #ebeefd;
+  --var-dark: #202f44;
+  --var-blue: #0045ff;
+  --var-white: #fff;
+  --var-dark-gray: #546175;
+  --var-light-gray: rgba(84, 97, 117, 0.5);
+  --small-txt: 14px;
+  --medium-txt: 17px;
+  --big-txt: 25px;
+  --main-header: 54px;
+  --big-header: 54px;
+  --medium--header: 42px;
+  --small-header: 18px;
+}
+
+.sticky {
+  background-color: var(--var-bg);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.1) 0px 10px 20px 0px;
+          box-shadow: rgba(100, 100, 111, 0.1) 0px 10px 20px 0px;
+}
+
+.big__text {
+  font-size: var(--big-txt);
+  font-weight: bold;
+  color: var(--var-dark);
+}
+
+.container {
+  max-width: 85%;
+}
+
+.blue__txt {
+  color: var(--var-blue);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#nav {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+#abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12%;
+}
+
+#abilities h1 {
+  margin: 20px 0;
+}
+
+#abilities p.header__p {
+  width: 40%;
+  margin: auto;
+}
+
+#abilities .advantage__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: left;
+  padding: 3% 6%;
+}
+
+#abilities .advantage__box .advantage {
+  padding: 30px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  border-radius: 15px;
+}
+
+#abilities .advantage__box .advantage h4 {
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+#abilities .advantage__box .advantage:hover {
+  background-color: var(--var-white);
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#abilities .advantage__box .advantage p {
+  margin: 30px 0;
+}
+
+#advisors,
+#teammates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#advisors .container .medium__header,
+#teammates .container .medium__header {
+  margin: 20px 0;
+}
+
+#advisors .container .profile__box,
+#teammates .container .profile__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 120px;
+  margin-top: 60px;
+}
+
+#advisors .container .profile__box .profile__img,
+#teammates .container .profile__box .profile__img {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#advisors .container .profile__box .profile__img .profile__picture,
+#teammates .container .profile__box .profile__img .profile__picture {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+}
+
+#advisors .container .profile__box .profile__img a,
+#teammates .container .profile__box .profile__img a {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--var-dark);
+  right: 5rem;
+  bottom: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#advisors .container .profile__box .profile__img a img,
+#teammates .container .profile__box .profile__img a img {
+  width: 15px;
+  height: 15px;
+}
+
+#advisors .container .profile__box .profile__text,
+#teammates .container .profile__box .profile__text {
+  width: 75%;
+  margin: auto;
+}
+
+#advisors .container .profile__box .profile__text .job,
+#teammates .container .profile__box .profile__text .job {
+  color: var(--var-light-gray);
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper .swiper-wrapper {
+  width: 100vw;
+}
+
+.swiper .swiper-wrapper .team__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper .swiper-wrapper .team__slider .swiper-slide {
+  max-height: 300px;
+}
+
+#teammates .container .profile__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#teammates .container .profile__box .profile__img {
+  margin-bottom: 30px;
+}
+
+#teammates .container .profile__box .profile__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#teammates .container .profile__box .profile__social i {
+  font-size: var(--big-txt);
+  color: var(--var-dark-gray);
+  margin-right: 10px;
+}
+
+#trial {
+  margin-top: 10%;
+}
+
+footer {
+  margin-top: 3%;
+}
+/*# sourceMappingURL=team.css.map */

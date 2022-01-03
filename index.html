@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hover;</title>
 
     <!-- fontawesome -->
@@ -17,7 +17,10 @@
     <!-- Swiper Js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+    <!-- Scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,18 +31,26 @@
 
 
                 <div class="logo">
+                   <a href="index.html">
                     <img src="./img/BlueHover.png" alt="">
+                   </a>
                 </div>
+
                 <div class="nav__links">
                     <ul>
                         <li><a href="">Нүүр<i class="fas fa-angle-down"></i></a>
                         </li>
                         <li><a href="">Бидний тухай<i class="fas fa-angle-down"></i></a></li>
-                        <li><a href="">Компани<i class="fas fa-angle-down"></i></a> </li>
+                        <li><a href="team.html">Компани<i class="fas fa-angle-down"></i></a> </li>
                         <li><a href="">Үйлчилгээ<i class="fas fa-angle-down"></i></a> </li>
                         <li> <a href="">Холбогдох<i class="fas fa-angle-down"></i></a></li>
+                        <div class="toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </ul>
                 </div>
+
                 <div class="nav__btns">
                     <a href="#">Нэвтрэх</a>
                     <a href="#" class="sign__btn">Бүртгүүлэх</a>
@@ -48,13 +59,12 @@
         </div>
     </nav>
     <div class="video__section">
-        <br>
 
         <section id="first " class=" page">
             <div class="container">
                 <video src="./video/main.mp4" class="video" autoplay muted></video>
                 <div class="content">
-                    <h1 class="big__header">Сайн байна уу?
+                    <h1 class="main__header">Сайн байна уу?
                     </h1>
                     <p class="big__p">
                         Салбар салбарын бизнесийн чиглэл, үйл ажиллагааны <br> ур чадвараас үл хамааран өөрийн бизнест зориулсан
@@ -70,14 +80,14 @@
                         </a>
                     </div>
                     <div class="svg__box">
-                        <img src="./img/Logo-001.svg" alt="">
+                        <!-- <img src="./img/Logo-001.svg" alt="">
                         <img src="./img/Logo-002.svg" alt="">
                         <img src="./img/Logo-003.svg" alt="">
                         <img src="./img/Logo-004.svg" alt="">
                         <img src="./img/Logo-005.svg" alt="">
                         <img src="./img/Logo-006.svg" alt="">
                         <img src="./img/Logo-007.svg" alt="">
-                        <img src="./img/Logo-008.svg" alt="">
+                        <img src="./img/Logo-008.svg" alt=""> -->
                     </div>
                 </div>
 
@@ -87,23 +97,24 @@
             <div class="container">
                 <video src="./video/second.mp4" class="video" loop autoplay></video>
                 <div class="content">
-                    <h1 class="medium__header">Бид хэн бэ? <br>Бид юу хийдэг вэ?
+                    <h1 class="medium__header">Бид хэн бэ? <br>Бид юу хийдэг вэ? </h1>
 
-                        <p class="big__p">
-                            Хөгжүүлэлтийн баггүй хэмээн бүү санаа зов. Технологийн эрин зуун болсон энэ цагт өнөөдрөөс эхлэн тантай хамтран ажиллаж таны бизнесийг хамтдаа хөгжүүлэх болно.
+                    <p class="big__p">
+                        Хөгжүүлэлтийн баггүй хэмээн бүү санаа зов. Технологийн <br> эрин зуун болсон энэ цагт өнөөдрөөс эхлэн тантай <br> хамтран ажиллаж таны бизнесийг хамтдаа хөгжүүлэх болно.
+                    </p>
+                    <a href="#" class="link">Цааш
+                        <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
+                    </a>
+                    <img src="./img/GrayHover.png" alt="Linus">
+                    <div class="small__p">
+                        <p>""Таны бизнес амжилтанд хүрвэл бид амжилтанд хүрэх болно.""</p>
+                    </div>
+                    <div class="author">
+                        <p>А. Эрдэмсайхан, <span class="auther__job">CEO and Co-founder of Hover</span> </p>
+                        <p>Г. Мөнх-Од, <span class="auther__job">Tech Advisor and Co-founder of Hover</span>
                         </p>
-                        <a href="#" class="link">Цааш
-                            <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
-                        </a>
-                        <img src="./img/GrayHover.png" alt="Linus">
-                        <div class="small__p">
-                            <p>""Таны бизнес амжилтанд хүрвэл бид амжилтанд хүрэх болно.""</p>
-                        </div>
-                        <div class="author">
-                            <p>А. Эрдэмсайхан, <span class="auther__job">CEO and Co-founder of Hover</span> </p>
-                            <p>Г. Мөнх-Од, <span class="auther__job">Tech Advisor and Co-founder of Hover</span> </p>
-                            <p>А. Билгүүн, <span class="auther__job">Investor of Hover</span> </p>
-                        </div>
+                        <p>А. Билгүүн, <span class="auther__job">Investor of Hover</span> </p>
+                    </div>
                 </div>
             </div>
 
@@ -112,32 +123,37 @@
 
         <section id="third" class="page">
             <video src="./video/third.mp4" class="video" loop autoplay></video>
-            <div class="content__right">
-                <h1 class="medium__header">Залуу сэтгэлгээг <br> ашигла.</h1>
-                <p class="big__p">
-                    Сэтгэлгээ бол ОЙЛГОЛТуудыг уялдуулах замаар <br> дүгнэлт гаргахад чиглэсэн цэгцтэй тасралтгүй <br> хийгддэг логик үйлдэл юм.
-                </p>
-                <div class="facials">
+            <div class="container">
+
+
+                <div class="content__right">
+                    <h1 class="medium__header">Залуу сэтгэлгээг <br> ашигла.</h1>
                     <p class="big__p">
-                        Хөгжил
+                        Сэтгэлгээ бол ОЙЛГОЛТуудыг уялдуулах замаар <br> дүгнэлт гаргахад чиглэсэн цэгцтэй тасралтгүй
+                        <br> хийгддэг логик үйлдэл юм.
                     </p>
-                    <p>
-                        Тасралтгүй хөгжих залуу сэтгэлгээг өөрийн<br> бизнестээ хэрхэн ашиглахаа төсөөлөөд үз.
-                    </p>
-                    <a href="#" class="link">Цааш
-                        <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
-                    </a>
-                </div>
-                <div class="facials">
-                    <p class="big__p">
-                        Цаг үе
-                    </p>
-                    <p>
-                        21-р зууны залуучуудыг 21-р зууны бизнестээ <br> туслуул. Тохиромжтой үеийнхнийг тохирсон цагт нь.
-                    </p>
-                    <a href="#" class="link">Цааш
-                        <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
-                    </a>
+                    <div class="facials">
+                        <p class="big__p">
+                            Хөгжил
+                        </p>
+                        <p>
+                            Тасралтгүй хөгжих залуу сэтгэлгээг өөрийн<br> бизнестээ хэрхэн ашиглахаа төсөөлөөд үз.
+                        </p>
+                        <a href="#" class="link">Цааш
+                            <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
+                        </a>
+                    </div>
+                    <div class="facials">
+                        <p class="big__p">
+                            Цаг үе
+                        </p>
+                        <p>
+                            21-р зууны залуучуудыг 21-р зууны бизнестээ <br> туслуул. Тохиромжтой үеийнхнийг тохирсон цагт нь.
+                        </p>
+                        <a href="#" class="link">Цааш
+                            <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -148,7 +164,8 @@
                 <div class="content">
                     <h1 class="medium__header">Бид юуг санал <br> болгох вэ?</h1>
                     <p class="big__p">
-                        Хэзээ ч огтлолцохгүй 3-н ойлголт. Энэ бол <br> ХЯМД, ХУРДАН, ЧАНАРТАЙ гэх ойлголтууд юм. <br> Харин бид танд ЧАНАРыг санал болгож байна.
+                        Хэзээ ч огтлолцохгүй 3-н ойлголт. Энэ бол <br> ХЯМД, ХУРДАН, ЧАНАРТАЙ гэх ойлголтууд юм.
+                        <br> Харин бид танд ЧАНАРыг санал болгож байна.
                     </p>
                     <a href="#" class="link">Сонголт таны гарт
                         <img src="./img/long-right-arrow.svg " class="right__arrow" alt="">
@@ -240,40 +257,42 @@
     </section>
 
     <section id="advantages" class="middle__page">
-        <h1 class="medium__header">Манай баг хамт олон танд <br> юуг амлах вэ?</h1>
-        <div class="advantage__box">
-            <div class="advantage">
-                <h4>Чанар </h4>
-                <p class="big__p">
-                    Үйлчлүүлэгчдийн бизнес амжилтанд хүрэх нь бид өөрсдөө амжилтанд хүрсэн мэт байх болно. Тийм учраас бид ажлынхаа жижиг хэсэг бүрт ач холбогдол өгөн анхаарч ажилладаг.
-                </p>
-            </div>
-            <div class="advantage">
-                <h4>Шинэлэг </h4>
-                <p class="big__p">
-                    Цаг хугацаа урсан өнгөрөхийн хэрээр юмс хуучирдаг. Харин бид цаг хугацаатай өрсөлдөж хамгийн шинэлэг өнгө төрх, үйлчилгээг үйлчлүүлэгчиддээ амлаж байна.Цаг хугацаа урсан өнгөрөхийн хэрээр юмс хуучирдаг. Харин бид цаг хугацаатай өрсөлдөж хамгийн шинэлэг
-                    өнгө төрх, үйлчилгээг үйлчлүүлэгчиддээ амлаж байна.
-                </p>
-            </div>
-            <div class="advantage">
-                <h4>Хурд </h4>
-                <p class="big__p">
-                    Манай үйлчлүүлэгчдийн хувьд цаг бол алт мэт байдаг. Тийм ч учраас бид өөрсдийнхөө хурдтай, үр бүтээлтэй байдалд хамгийн их ач холбогдол өгч ажилладаг.
-                </p>
-            </div>
-            <div class="advantage">
-                <h4>Баталгаа </h4>
-                <p class="big__p">
-                    Get premium support from dedicated success and solutions engineering teams whenever you need via email, chat or phone. We're there for you from the design and deployment stages through operations to help solve problems before they arise.
-                </p>
+        <div class="container">
+            <h1 class="medium__header">Манай баг хамт олон танд <br> юуг амлах вэ?</h1>
+            <div class="advantage__box">
+                <div class="advantage">
+                    <h4>Чанар </h4>
+                    <p class="big__p">
+                        Үйлчлүүлэгчдийн бизнес амжилтанд хүрэх нь бид өөрсдөө амжилтанд хүрсэн мэт байх болно. Тийм учраас бид ажлынхаа жижиг хэсэг бүрт ач холбогдол өгөн анхаарч ажилладаг.
+                    </p>
+                </div>
+                <div class="advantage">
+                    <h4>Шинэлэг </h4>
+                    <p class="big__p">
+                        Цаг хугацаа урсан өнгөрөхийн хэрээр юмс хуучирдаг. Харин бид цаг хугацаатай өрсөлдөж хамгийн шинэлэг өнгө төрх, үйлчилгээг үйлчлүүлэгчиддээ амлаж байна.Цаг хугацаа урсан өнгөрөхийн хэрээр юмс хуучирдаг. Харин бид цаг хугацаатай өрсөлдөж хамгийн шинэлэг
+                        өнгө төрх, үйлчилгээг үйлчлүүлэгчиддээ амлаж байна.
+                    </p>
+                </div>
+                <div class="advantage">
+                    <h4>Хурд </h4>
+                    <p class="big__p">
+                        Манай үйлчлүүлэгчдийн хувьд цаг бол алт мэт байдаг. Тийм ч учраас бид өөрсдийнхөө хурдтай, үр бүтээлтэй байдалд хамгийн их ач холбогдол өгч ажилладаг.
+                    </p>
+                </div>
+                <div class="advantage">
+                    <h4>Баталгаа </h4>
+                    <p class="big__p">
+                        Get premium support from dedicated success and solutions engineering teams whenever you need via email, chat or phone. We're there for you from the design and deployment stages through operations to help solve problems before they arise.
+                    </p>
+                </div>
             </div>
         </div>
-
     </section>
 
     <section id="trial" class="middle__page">
         <div class="trial__content">
-            <h1 class="big__header">Манайд та өөрийн програм <br> хангамжийн карьерийнхаа <br> гарааг тавиарай. </h1>
+            <h1 class="big__header">Манайд та өөрийн програм <br> хангамжийн карьерийнхаа <br> гарааг тавиарай.
+            </h1>
 
             <div class="buttons">
                 <a href="" class="btn dark">
@@ -340,36 +359,61 @@
                 </p>
             </div>
         </div>
-        </f>
-        <script src="./java.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./java.js"></script>
 
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
+    <script src="./normalize.js"></script>
 
-                        // Store hash
-                        var hash = this.hash;
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function() {
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let menutoggle = document.querySelector(".nav__links");
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle("active");
+        };
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 3100)
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
-        </script>
-</body>
+        });
+    </script>
+    </body>
