@@ -395,10 +395,9 @@ a {
 
 #verification {
     margin-top: 300px;
-    .verification__content,
-    .triol__content {
-        overflow-x: hidden;
-        min-width: 60%;
+    .verification__content {
+//         overflow-x: hidden;
+//         min-width: 60%;
         video {
             width: 60%;
         }
