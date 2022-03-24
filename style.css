@@ -444,14 +444,13 @@ a {
   margin-top: 300px;
 }
 
-#verification .verification__content,
+/* #verification .verification__content,
 #verification .triol__content {
   overflow-x: hidden;
   min-width: 60%;
-}
+} */
 
-#verification .verification__content video,
-#verification .triol__content video {
+#verification .verification__content video {
   width: 60%;
 }
 
