@@ -15,7 +15,7 @@
     --var-dark-gray: #546175;
     --small-txt: 14px;
     --medium-txt: 18px;
-    --main-header: 54px;
+    --main-header: 24px;
     --big-header: 54px;
     --medium--header: 42px;
     --small-header: 18px;
@@ -395,12 +395,9 @@ a {
 
 #verification {
     margin-top: 300px;
-    .verification__content {
-//         overflow-x: hidden;
-//         min-width: 60%;
-        video {
-            width: 60%;
-        }
+    .verification__content,
+    .trial__content {
+        overflow-x: hidden;
         .big__p {
             margin-top: 30px;
         }
@@ -412,6 +409,10 @@ a {
             }
         }
     }
+}
+
+#verification .verification__content video {
+    width: 50%;
 }
 
 #trial {
@@ -440,7 +441,7 @@ a {
             margin: 50px 0;
             display: grid;
             grid-column-gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             z-index: -2;
             .grid__img {
                 img {
@@ -492,7 +493,7 @@ a {
     }
     .advantage__box {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         text-align: left;
         padding: 3% 13%;
@@ -569,7 +570,7 @@ a {
                 position: absolute;
                 top: -35%;
                 right: 0;
-                width: 55vw;
+                width: 55vw !important;
             }
         }
         .explore__content {
@@ -851,11 +852,10 @@ footer {
             grid-template-columns: 1fr;
         }
     }
-}
-
-#verification .verification__content video,
-#verification .triol__content video {
-    width: 110%;
+    #verification .verification__content video,
+    #verification .trial__content video {
+        width: 110%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -889,7 +889,7 @@ footer {
         margin: 150px 30px 0 30px;
     }
     #verification .verification__content video,
-    #verification .triol__content video {
+    #verification .trial__content video {
         width: 110%;
     }
 }
@@ -962,12 +962,12 @@ footer {
         }
     }
     #verification .verification__content .big__p,
-    #verification .triol__content .big__p {
+    #verification .trial__content .big__p {
         width: 300px;
         margin: auto;
     }
     #verification .verification__content video,
-    #verification .triol__content video {
+    #verification .trial__content video {
         width: 100vw;
     }
     footer {
